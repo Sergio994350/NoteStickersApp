@@ -37,6 +37,8 @@ fun TransparentHintTextField(
                     onFocusChange(it)
                 }
         )
-        Text(text = hint, style = textStyle, color = Color.DarkGray)
+        if(isHintVisible) {
+            Text(text = hint, style = textStyle, color = Color.DarkGray)
+        }
     }
 }
